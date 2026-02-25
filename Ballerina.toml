@@ -10,10 +10,11 @@ sticky = true
 [[tool.persist]]
 id = "generate-db-client"
 targetModule = "poc_step4.epfl"
-options.datastore = "mysql"
+options = {datastore = "mysql"}
 filePath = "persist/model.bal"
 
 [[platform.java21.dependency]]
 groupId = "io.ballerina.stdlib"
 artifactId = "persist.sql-native"
 version = "1.7.2"
+
