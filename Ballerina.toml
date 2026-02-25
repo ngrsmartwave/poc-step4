@@ -1,0 +1,20 @@
+[package]
+org = "nicolasgruszczynska"
+name = "poc_step4"
+version = "0.1.0"
+distribution = "2201.12.9"
+
+[build-options]
+observabilityIncluded = true
+
+[[tool.persist]]
+id = "generate-db-client"
+targetModule = "poc_step4.epfl"
+options.datastore = "mysql"
+filePath = "persist/model.bal"
+
+[[platform.java21.dependency]]
+groupId = "io.ballerina.stdlib"
+artifactId = "persist.sql-native"
+version = "1.6.0"
+

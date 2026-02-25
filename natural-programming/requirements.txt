@@ -1,0 +1,8 @@
+voici une integration avec :
+- un couche api etudiant_service
+- une couche acces au données module epfl généré par bal persists 
+  
+implémente les methodes du service etudiant_service
+- utilise le client et les objets du module epfl 
+- le client persist est dans un module différent epfl:
+- Gere les imports du module epfl et préfixe les objets persist par epfl:
